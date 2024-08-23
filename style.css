@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: aliceblue ;
+    
+}
+form{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(72, 35, 239, 0.238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calcontainer{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-template-rows:50px 50px 50px 50px;
+    width: auto;
+    gap: 10px;
+    border-radius: 10px;
+}
+.calcontainer div{
+    border: 2px solid  black;
+    border-radius: 10px;
+    padding: 1px;
+    border: none;
+}
+.calcontainer div input[type="button"]{
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.6s;
+    font-size: 15px;
+}
+
+.output{
+    grid-column: span 4;
+}
+.equal{
+    grid-column: span 2;
+}
+.output input[type="text"]{
+    background-color: black ;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: right;
+    font-size: x-large;
+    border-radius: 10px;
+}
+.calcontainer div input[type="button"]:hover{
+    background-color: aliceblue;
+    color: grey ;
+    border: 2px solid rgb(0, 208, 255);
+}
+.col input[type="button"]{
+    color: rgb(221, 0, 255);
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculatort</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form action="" name="myform">
+        
+    
+    <div class="calcontainer">
+        
+            <div class="output"><input type="text" name="display" autocomplete="off" value="" id="display"></div>
+            <div class="ac col"><input type="button" value="AC" onclick=" display.value = '' "></div>
+            <div class="del col"><input type="button" value="DEL" onclick=" display.value = display.value.toString().slice(0,-1) "></div>
+            <div class="module col"><input type="button" value="%" onclick=" performOperation('%') "></div>
+            <div class="division col"><input type="button" value="/" onclick="performOperation('/') "></div>
+            <div class="num"><input type="button" value="7" onclick=" update('7') "></div>
+            <div class="num"><input type="button" value="8" onclick=" update('8') "></div>
+            <div class="num"><input type="button" value="9" onclick=" update('9') "></div>
+            <div class="multiple col"><input type="button" value="*" onclick="performOperation('*') "></div>
+            <div class="num"><input type="button" value="4" onclick=" update('4') "></div>
+            <div class="num"><input type="button" value="5" onclick=" update('5') "></div>
+            <div class="num"><input type="button" value="6" onclick=" update('6') "></div>
+            <div class="subtract col"><input type="button" value="-" onclick=" performOperation('-')"></div>
+            <div class="num"><input type="button" value="1" onclick=" update('1') "></div>
+            <div class="num"><input type="button" value="2" onclick=" update('2') "></div>
+            <div class="num"><input type="button" value="3" onclick=" update('3') "></div>
+            <div class="addition col"><input type="button" value="+" onclick=" performOperation('+') "></div>
+            <div class="dot"><input type="button" value="." onclick=" update('.')"></div>
+            <div class="num"><input type="button" value="0" onclick=" update('0') "></div>
+            <div class="equal col"><input type="button" name="final" value="=" id="final" onclick="result()"></div>
+        
+            
+    </div>
+   </form>
+<script src="./index.js"></script>
+</body>
+</html>
